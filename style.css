@@ -30,7 +30,7 @@ body {
   font-style: normal;
   font-size: 15px;
   font-weight: 400;
-  color: hsl(217, 12%, 63%);
+  color: rgb(149, 158, 172);
 }
 
 /* RESET ELEMENTS */
@@ -48,48 +48,53 @@ button {
 
 /* ================================================================= */
 /* 2. TYPOGRAPHY */
-/* RATING CONTAINER */
 
-/* MAIN TITLES */
+/* RATING STATE START | TYPOGRAPHY */
+/* MAIN TITLES | TYPOGRAPHY */
 .heading {
   color: hsl(0, 0%, 100%);
   font-family: 'Overpass';
   font-style: normal;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 35.45px;
 }
+  .p {
+    font-size: 0.896rem;
+    line-height: 22px;
+  }
 
-/* RATING */
-#rtg {
+/* RATING | TYPOGRAPHY */
+#rtg > button {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 0.9rem;
   line-height: 24px;
   letter-spacing: 0.2px;
+  color: rgba(124, 135, 152, 1);
 }
 #selected-rtg {
   color: hsl(25, 97%, 53%);
 }
 
-/* SUBMIT BUTTON */
-.submit-btn {
+/* SUBMIT BUTTON | TYPOGRAPHY */
+#submit {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: hsl(0, 0%, 100%);
   font-weight: 700;
-  font-size: 15px;
+  font-size: 0.8rem;
   line-height: 19px;
   letter-spacing: 2px;
 }
 
-/* THANK YOU STATE */
+/* THANK YOU STATE | TYPOGRAPHY */
 .action-icon, 
 #selected-rtg, 
-.attribution {
+#attribution {
 text-align: center;
 }
 
-/* THANK YOU TEXT */
+/* THANK YOU TEXT | TYPOGRAPHY */
 .thanks, 
 .thanks-p {
   text-align: center;
@@ -99,12 +104,12 @@ text-align: center;
   color: #969FAD;
 }
 
-/* ATTRIBUTION */
-.attribution {
+/* ATTRIBUTION | TYPOGRAPHY */
+#attribution {
   font-size: 11px;
   letter-spacing: 0.3px;
 }
-.attribution a {
+#attribution a {
   color: hsl(228, 45%, 44%);
 }
 
@@ -112,7 +117,79 @@ text-align: center;
 /* ================================================================= */
 /* 3. LAYOUT */
 
+.rating-container,
+#star,
+#rtg {
+  /* FLEXBOX */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+/* RATING CONTAINERS | LAYOUT */
+.rating-container {
+  width: 100vw;
+  height: 100vh;
+  /* FLEXBOX */
+}
+  .rating-bg {
+    width: 327px;
+    height: 360px;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    ;
+    border-radius: 15px;
+    padding: 1.4rem;
+  }
+
+/* RATING STATE STAR ICON | LAYOUT */
+#star {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(38, 46, 56);
+  border-radius: 50%;
+  /* FLEXBOX */
+}
+  .star {
+    width: 13.96px;
+    height: 13.33px;
+  }
+
+/* RATING TEXT | LAYOUT */
+  #rtg-txt {
+    margin-top: 1.22rem;
+    margin-bottom: 1.5rem;
+  }
+    .p {
+      margin-top: 0.5rem;
+    }
+
+/* RATING SELECTION CONTAINER & BUTTONS | LAYOUT */
+  #rtg {
+    margin-bottom: 24px;
+    /* FLEXBOX */
+    justify-content: space-between;
+
+    z-index: 1;
+  }
+    #rtg > button {
+      width: 42px;
+      height: 42px;
+      background: rgb(38, 46, 56);
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+    }
+
+  /* SUBMIT BUTTON | LAYOUT */
+  #submit {
+    height: 45px;
+    width: 279px;
+    padding: 10px 109px 15px 108px; 
+    border-radius: 22.5px;
+    background: rgba(252, 118, 20, 1);
+    border: none;
+    cursor: pointer;
+  }
 
 /* ================================================================= */
 /* 4. MEDIA QUERY */
