@@ -2,48 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Interactive rating component</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script src="main.js" defer></script>
 </head>
+
 <body>
 
-  <!-- Rating state start -->
+<!-- RATING CONTAINER COMPONENT -->
+<div class="rating-container">
 
-  How did we do?
+  <!-- RATING STATE START -->
+  <div id="rating-bg" class="hide">
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+    <!-- STAR ICON -->
+    <div id="star">
+      <img src="./images/icon-star.svg" alt="star icon">
+    </div>
 
-  1 2 3 4 5
+    <!-- RATING BOX TEXT -->
+    <div id="rtg-txt" role="main">
+      <h1 class="heading rtg-title">How did we do?</h1>
 
-  Submit
+      <p class="p">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+    </div>
 
-  <!-- Rating state end -->
+    <!-- RATING SCALE -->
+    <div id="rtg" class="rtg-scale">
+      <button type="button" onclick="getStarRtg()" id='1' class="circle rtg bgColor"><a class="num">1</a></button>
+      <button type="button" onclick="getStarRtg()" id='2' class="circle rtg bgColor"><a class="num">2</a></button>
+      <button type="button" onclick="getStarRtg()" id='3' class="circle rtg bgColor"><a class="num">3</a></button>
+      <button type="button" onclick="getStarRtg()" id='4' class="circle rtg bgColor"><a class="num">4</a></button>
+      <button type="button" onclick="getStarRtg()" id='5' class="circle rtg bgColor"><a class="num">5</a></button>
+    </div>
 
-  <!-- Thank you state start -->
+    <!-- SUBMIT BUTTON -->
+    <div id="submit">
+      <button type="button" onclick="submitFunction()" class="btn">
+        Submit
+      </button>
+    </div>
 
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   </div>
+  <!-- RATING STATE END -->
+
+
+  <!-- THANK YOU STATE START -->
+  <div id="ty-box" class="rating-bg show">
+
+    <!-- ACTION ICON -->
+    <div class="action-icon">
+      <img src="./images/illustration-thank-you.svg" alt="Thank you illustration of received rating">
+    </div>
+
+    <!-- RATING SELECTION CHOSEN TEXT -->
+    <div class="selected-rating" role="main">
+      You selected <span id="rating">0</span> out of 5
+    </div>
+
+    <!-- THANK YOU TEXT -->
+    <div id="ty-txt" role="complementary">
+      <h1 class="thanks heading tyhead">
+        Thank you!
+      </h1>
+
+      <p class="thanks-p p">
+        We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!
+      </p>
+    </div>
+
+    <!-- ATTRIBUTION -->
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      <br>
+      Coded by <a href="https://vlorozco.com">Veronica L. Orozco</a>.
+    </div>
+
+  </div>
+  <!-- THANK YOU STATE END -->
+
+</div>
+
 </body>
 </html>
