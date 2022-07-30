@@ -19,11 +19,11 @@
 <div class="rating-container">
 
   <!-- RATING STATE START -->
-  <div id="rating-bg" class="hide">
+  <div id="rating-state-start" class="hide rating-bg">
 
     <!-- STAR ICON -->
     <div id="star">
-      <img src="./images/icon-star.svg" alt="star icon">
+      <img class="star" src="./images/icon-star.svg" alt="star icon">
     </div>
 
     <!-- RATING BOX TEXT -->
@@ -43,11 +43,9 @@
     </div>
 
     <!-- SUBMIT BUTTON -->
-    <div id="submit">
-      <button type="button" onclick="submitFunction()" class="submit-btn">
-        Submit
-      </button>
-    </div>
+    <button id="submit" type="button" onclick="submitFunction()">
+      Submit
+    </button>
 
   </div>
   <!-- RATING STATE END -->
@@ -79,7 +77,7 @@
     </div>
 
     <!-- ATTRIBUTION -->
-    <div class="attribution">
+    <div id="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       <br>
       Coded by <a href="https://vlorozco.com">Veronica L. Orozco</a>.
