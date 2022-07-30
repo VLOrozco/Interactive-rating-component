@@ -134,7 +134,6 @@ text-align: center;
 
 /* RATING CONTAINERS | LAYOUT */
 .rating-container {
-  outline: 1px solid white;
   width: 100%;
   height: 667px;
   padding-top: 154px;
@@ -146,7 +145,6 @@ text-align: center;
     width: 327px;
     height: 360px;
     background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
-    ;
     border-radius: 15px;
     padding: 1.4rem;
   }
@@ -256,3 +254,18 @@ text-align: center;
 
 /* ================================================================= */
 /* 4. MEDIA QUERY */
+
+@media only screen and (min-width: 450px) {
+  /* RATING CONTAINERS | MQ  */
+.rating-container {
+  height: 800px;
+  padding-top: 195px;
+  padding-bottom: 189px;
+}
+  .rating-bg {
+    width: 412px;
+    height: 416px;
+    border-radius: 30px;
+    padding: 32px;
+  }
+}
