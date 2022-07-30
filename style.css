@@ -163,7 +163,7 @@ text-align: center;
       margin-top: 0.5rem;
     }
 
-/* RATING SELECTION CONTAINER & BUTTONS | LAYOUT */
+/* RATING SELECTION CONTAINER & BUTTONS + ACTIVE STATES | LAYOUT */
   #rtg {
     margin-bottom: 24px;
     /* FLEXBOX */
@@ -179,17 +179,28 @@ text-align: center;
       border: none;
       cursor: pointer;
     }
+      #rtg > button:hover,
+      #rtg > button:active,
+      #rtg > button:focus {
+        color: rgb(255, 255, 255);
+        background: rgba(252, 118, 20, 1);
+      }
 
-  /* SUBMIT BUTTON | LAYOUT */
+  /* SUBMIT BUTTON & ACTIVE STATES | LAYOUT */
   #submit {
-    height: 45px;
     width: 279px;
+    height: 45px;
     padding: 10px 109px 15px 108px; 
     border-radius: 22.5px;
     background: rgba(252, 118, 20, 1);
     border: none;
     cursor: pointer;
   }
+    #submit:hover,
+    #submit:active {
+      color: rgba(252, 118, 20, 1);
+      background: rgb(255, 255, 255);
+    }
 
 /* ================================================================= */
 /* 4. MEDIA QUERY */
