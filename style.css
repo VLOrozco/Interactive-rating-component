@@ -33,7 +33,65 @@ body {
 
 /* ================================================================= */
 /* 2. TYPOGRAPHY */
+/* RATING CONTAINER */
 
+/* MAIN TITLES */
+.heading {
+  color: hsl(0, 0%, 100%);
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35.45px;
+}
+
+/* RATING */
+#rtg {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+#selected-rtg {
+  color: hsl(25, 97%, 53%);
+}
+
+/* SUBMIT BUTTON */
+.submit-btn {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 2px;
+}
+
+/* THANK YOU STATE */
+.action-icon, 
+#selected-rtg, 
+.attribution {
+text-align: center;
+}
+
+/* THANK YOU TEXT */
+.thanks, 
+.thanks-p {
+  text-align: center;
+}
+.thanks-p {
+  line-height: 24px;
+  color: #969FAD;
+}
+
+/* ATTRIBUTION */
+.attribution {
+  font-size: 11px;
+  letter-spacing: 0.3px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
 
 /* ================================================================= */
