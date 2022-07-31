@@ -49,9 +49,9 @@ Users should be able to:
 ---
 ## Links
 
-- Solution URL: [Github Code](https://github.com/VLOrozco/interactive-rating-component.git)
+- Solution URL: [Github Code](https://github.com/VLOrozco/Interactive-rating-component.git)
 
-- Live Site URL: [Interactive Rating Component](https://vlorozco.github.io/interactive-rating-component/)
+- Live Site URL: [Interactive Rating Component](https://vlorozco.github.io/Interactive-rating-component/)
 
 ---
 ## Useful resources
