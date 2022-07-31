@@ -8,6 +8,7 @@ const tyStartContainer = document.getElementById('ty-box');
 var starRating = document.getElementById('rating');
 
 
+
 // GET VALUE() & OUTPUT TO STAR RATING ON TY CONTAINER
 function getValue() {
   // OUTPUT SELECTED RATING
@@ -28,10 +29,10 @@ rates.forEach(rate => {
 const submit = document.getElementById('submit');
 
 // SUBMIT FUNCTION
-function submitFunction() {
+submit.addEventListener('click', function submitFunction() {
   if (starRating.textContent <= 0) {
     return alert('Please select a rating!')
   }
   ratingStartContainer.style.display = "none";
   tyStartContainer.style.display = "block";
-}
+})
