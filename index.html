@@ -34,18 +34,34 @@
     </div>
 
     <!-- RATING SCALE -->
-    <div id="rtg" class="rtg-scale">
-      <button type="button" onclick="getStarRtg()" id='1' class="circle rtg bgColor"><a class="num">1</a></button>
-      <button type="button" onclick="getStarRtg()" id='2' class="circle rtg bgColor"><a class="num">2</a></button>
-      <button type="button" onclick="getStarRtg()" id='3' class="circle rtg bgColor"><a class="num">3</a></button>
-      <button type="button" onclick="getStarRtg()" id='4' class="circle rtg bgColor"><a class="num">4</a></button>
-      <button type="button" onclick="getStarRtg()" id='5' class="circle rtg bgColor"><a class="num">5</a></button>
+    <div id="rtg" class="form rtg-scale">
+
+      <button type="button" value='1' class="circle rtg bgColor" onclick="getValue()">
+        1
+      </button>
+
+      <button type="button" value='2' class="circle rtg bgColor" onclick="getValue()">
+        2
+      </button>
+
+      <button type="button" value='3' class="circle rtg bgColor" onclick="getValue()">
+        3
+      </button>
+
+      <button type="button" value='4' class="circle rtg bgColor" onclick="getValue()">
+        4
+      </button>
+
+      <button type="button" value='5' class="circle rtg bgColor" onclick="getValue()">
+        5
+      </button>
+
     </div>
 
     <!-- SUBMIT BUTTON -->
-    <button id="submit" type="button" onclick="submitFunction()">
+    <div id="submit" type="submit" onclick="submitFunction()">
       Submit
-    </button>
+    </div>
 
   </div>
   <!-- RATING STATE END -->
