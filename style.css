@@ -188,10 +188,13 @@ text-align: center;
       cursor: pointer;
     }
       #rtg > button:hover,
-      #rtg > button:active,
-      #rtg > button:focus {
+      #rtg > button:active {
         color: rgb(255, 255, 255);
         background: rgba(252, 118, 20, 1);
+      }
+      #rtg > button:focus {
+        color: rgb(255, 255, 255);
+        background: rgba(124, 135, 152, 1);
       }
 
   /* SUBMIT BUTTON & ACTIVE STATES | LAYOUT */
