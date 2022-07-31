@@ -1,11 +1,8 @@
 // RATING START CONTAINER
 const ratingStartContainer = document.getElementById('rating-state-start');
-console.log(ratingStartContainer);
 
 // THANK YOU START CONTAINER
 const tyStartContainer = document.getElementById('ty-box');
-console.log(tyStartContainer);
-
 
 
 // GET VALUE() & OUTPUT TO STAR RATING ON TY CONTAINER
